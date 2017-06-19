@@ -1,3 +1,22 @@
 body {
-    background: red;
+    background: white;
+    font-size: 20px;
+    background: #A9A9A9;
+}
+h1 {
+	font-family: 'Give You Glory', cursive;
+	text-align: center;
+}
+ul {
+	font-size: 15px;
+	font-family:'Open Sans Condensed', sans-serif;
+}
+h3 {
+	font-family: 'Give You Glory', cursive;
+	color: RebeccaPurple;
+}
+img {
+	border-radius:50%;
+	display: block;
+	max-width: 300px;
 }
