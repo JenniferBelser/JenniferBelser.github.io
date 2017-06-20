@@ -1,22 +1,46 @@
 body {
-    background: white;
     font-size: 20px;
-    background: #A9A9A9;
+    /*background: #A9A9A9;*/
+    background: #DFD9E5;
 }
 h1 {
-	font-family: 'Give You Glory', cursive;
+	font-family: 'Oswald', sans-serif;
 	text-align: center;
 }
 ul {
 	font-size: 15px;
 	font-family:'Open Sans Condensed', sans-serif;
+	list-style: none;
+	border: 10px solid black;
+	padding: 10px;
+	margin: 5px 0px 5px 0px;
+	width: 500px;
+
 }
 h3 {
-	font-family: 'Give You Glory', cursive;
+	font-family: 'Oswald', sans-serif;
 	color: RebeccaPurple;
+
 }
 img {
 	border-radius:50%;
-	display: block;
 	max-width: 300px;
 }
+
+.in-the-box {
+	background: #A9A9A9;
+	width: 540px;
+	margin: 5px 5px;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.links {
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+}
+
