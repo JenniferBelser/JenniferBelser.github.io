@@ -1,0 +1,40 @@
+.big-grey-block {
+	margin: 0 auto;
+	padding: 5px;
+	background-color: lightgrey;
+	text-align: center;
+	width: 900px;
+}
+
+.nav {
+	background-color: black;
+	text-align: center;
+	padding: 10px;
+}
+
+.nav a {
+	color: white;
+	text-decoration: none;
+}
+
+.red {
+	background-color: red;
+}
+
+.green {
+	color: green;
+	padding: 10px 
+
+}
+
+.blue {
+	color:blue;
+	padding: 10px 
+	
+}
+
+.yellow {
+	color: yellow;
+	padding: 10px 
+
+}

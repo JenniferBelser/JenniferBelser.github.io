@@ -1,0 +1,92 @@
+.container {
+	font-family: 'Lato', sans-serif;
+	width: 720px;
+	padding: 54px;
+	border-left: solid 6px #dddddd;
+}
+/*the font comes up odd in Safari with weird characters*/
+h1 {
+	color: red;
+	line-height: 1.5px;
+	font-weight: lighter;
+}
+
+h3 {
+	color: black;
+	font-weight: lighter;
+}
+
+
+.navlink { 
+	color: #dddddd;
+}
+/*I'm doing something wrong here and I can't get the links to align to the left*/
+ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+    text-align: center;
+    padding: 14px 10px;
+}
+
+.navlink:hover {
+	color: black;
+}	
+
+.date {
+	color: #cccccc;
+	font-weight: lighter;
+}
+
+#copyright {
+	 color: #bbbbbb;
+
+}
+
+.footer_link {
+	color: red;
+	text-decoration: none;
+}
+
+.footer_link_divider {
+	color: #bbbbbb;
+}
+
+.continues {
+	color: #DD0000;
+	font-weight: bold;
+	text-align: right;
+}
+
+.continues:hover {
+	color: #aa0000;
+}
+
+.fashion_image {
+	width: 720px;
+	display: block;
+}
+
+.blog_article {
+	color: #444444;
+}
+
+.article_title {
+	color: black;
+	font-weight: lighter;
+}
+
+.line_separator {
+	border-bottom:1px solid #dddddd;
+	margin-top: 30px;
+	margin-bottom: 65px;
+}
