@@ -1,0 +1,46 @@
+body {
+	width: 600px;
+}
+
+.top {
+  height: 200px;
+  background-color: orange;
+}
+
+.left {
+	background-color: red;
+	width: 30%;
+	height: 200px;
+	float: left;
+}
+
+.middle {
+	background-color: blue;
+	width: 30%;
+	height: 200px;
+	float: left;
+}
+
+.right {
+	background-color: green;
+	width: 30%;
+	height: 200px;
+	float: right;
+}
+
+.clearfix:after {
+   content: ".";
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+.box {
+	margin: 1.5%;
+}
+
+.footer {
+  background-color: pink;
+  height: 200px;
+}

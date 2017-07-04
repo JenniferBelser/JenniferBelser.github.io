@@ -1,0 +1,165 @@
+/* FONT FAMILY HELPERS :)
+font-family: 'Oswald', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Source Sans Pro', sans-serif; */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Source Sans Pro";
+}
+
+.wrapper {
+	width: 1080px;
+}
+
+.container {
+	width: 360px;
+	float: left;
+}
+
+h1 {
+	font-family: "Merriweather", serif;
+	margin: 0px;
+	color: yellow;
+	background: black;
+	display: inline-block;
+}
+
+.nav-header {
+	background: black;
+	padding: 10px;
+	border-bottom: 5px solid yellow;
+}
+
+nav a {
+	font-family: "Source Sans Pro";
+	color: white;
+	text-decoration: none;
+	background: black;
+	font-weight: normal;
+	float: right;
+	padding: 5px;
+}
+
+.second-header {
+	height: 70px;
+	background: #C6C6C6;
+}
+
+h2 {
+	padding: 15px;
+	font-family: "Merriweather", serif;
+	font-size: 25px;
+}
+
+.tagline {
+	font-style: italic;
+	text-align: center;
+}
+
+#strikethrough {
+	text-decoration: line-through;
+	color: darkgrey;
+}
+
+#underline {
+	text-decoration: underline yellow;
+}
+
+.image {
+	background-image: url('../img/coworking.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+h3 {
+	font-family: "Source Sans Pro";
+	font-weight: bolder;
+}
+
+.box {
+	width: 250px;
+	height: 200px;
+	border: 1px #000000;
+	margin: 40px;
+	padding: 20px;
+	float: right;
+	background: rgba(255,255,255,.7);
+	text-align: justify;
+}
+
+button {
+	font-family: "Oswald";
+	border-radius: 5px;
+	text-align: center;
+	width: 70%;
+	height: 40px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-left: 20px;
+	font-size: 16px;
+
+}
+
+#yellow-button {
+	background: yellow;
+	margin-left: 40px;
+}
+
+.callout {
+	background: #C6C6C6;
+}
+
+.float-left{
+	/*float: left;
+	width: 31%;
+	padding: 10px;
+	text-align: justify;
+	height: 31%;*/
+	width: 240px;
+	margin: 10px 0px 10px 0px;
+	padding: 20px 59px;
+	line-height: 150%;
+	float: left;
+}
+
+.border-box {
+	border-left: 2px solid #C6C6C6;
+}
+
+.text{
+	width: 70%;
+}
+
+.second-two {
+	padding: 0;
+}
+/*where am I going wrong with these borders?*/
+/*.left-border {
+	height: 100px;
+	border-left: 1px solid lightgrey;*/
+/*}*/
+/*.border-left {
+	border-left: 1px solid grey;
+}*/
+
+
+footer {
+	background: black;
+	color: white;
+	padding: 9px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+

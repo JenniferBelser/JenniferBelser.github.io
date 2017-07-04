@@ -1,8 +1,15 @@
+
+html, body {
+	height: 100%;
+	background-image: url('marble.jpg');
+	background-size: 50%
+}
+
 body {
     font-size: 20px;
     /*background: #A9A9A9;*/
-    background: #DFD9E5;
 }
+
 h1 {
 	font-family: 'Oswald', sans-serif;
 	text-align: center;
@@ -19,12 +26,17 @@ ul {
 }
 h3 {
 	font-family: 'Oswald', sans-serif;
-	color: RebeccaPurple;
+	color: red;
 
 }
-img {
-	border-radius:50%;
-	max-width: 300px;
+
+.wrapper {
+	text-align: center;
+}
+
+.jenni {
+	border-radius: 50%;
+	max-width: 200px;
 }
 
 .in-the-box {
@@ -39,8 +51,10 @@ a {
 	color: black;
 }
 
-.links {
+.links  {
 	font-family: 'Oswald', sans-serif;
 	text-align: center;
+	color: red;
 }
+
 

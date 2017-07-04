@@ -1,0 +1,37 @@
+h1 {
+  color: pink;
+  background: blue;
+  text-align: center;
+  margin: 0;
+}
+
+.box {
+  height: 250px;
+ 
+  background: red;
+  border: 1px solid black;
+}
+
+.left {
+  float: left;
+  width: 33%;
+  background: yellow;
+}
+
+.right {
+  float: right;
+  width: 33%;
+  background: green;
+}
+
+.box-wrapper {
+  border: 3px solid green;
+}
+
+.clearfix:after {
+   content: ".";
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
