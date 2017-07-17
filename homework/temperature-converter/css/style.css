@@ -1,0 +1,23 @@
+* {
+	margin: 0 auto;
+}
+
+body {
+	background-image: url('../img/namib-desert-meets-sea-9[2].jpg');
+	text-align: center;
+	background-repeat: none;
+	background-size: 100%;
+}
+
+h1, h2 {
+	font-family: 'Poppins', sans-serif;
+}
+
+button {
+	margin: 20px;
+}
+
+#c {
+
+	font-family: 'Josefin Sans', sans-serif;
+}

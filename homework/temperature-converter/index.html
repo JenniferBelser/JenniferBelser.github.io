@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temperature Converter</title>
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+</head>
+<div class="wrapper">
+	<h1>Celsius to Farenheit</h1>
+	<table>
+		<h2>Temperature Converter</h2>
+			<!-- <select id="tempclass">
+				<option value="celsius">Celsius</option>
+				<option value="farenheit">Farenheit</option>
+				<input id="tempval">
+				<br>
+				<output id="finaltemp">Converted Temperature</output>
+			<button id="clickme">Calculate!</button> -->
+	Celsius: <input id="c" onkeyup="convert('C')">
+  <button type="button" id="convert" onclick="convertTemp()">Convert</button>
+  Fahrenheit: <input id="f" onkeyup="convert('F')">
+	</table>	
+
+
+
+
+
+
+
+
+
+
+</div>
+<body>
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/project.js"></script>
+</body>
+</html>
