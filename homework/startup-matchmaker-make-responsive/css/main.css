@@ -1,0 +1,229 @@
+/*TIPS / GUIDELINES TO MAKE RESPONSIVE
+
+- reference the two included comps.  one shows how the page should resond in a fluid manner, the other shows a change in style when screen width is less than 600px
+- use percentage widths on the three tout columns on the bottom, and the .blurb element. Don't forget to use box-sizing: border-box to have padding and margin included in the elements' widths to make calculations easier
+- in small view (<600px page width) remove the floats and center elements per the comp
+- in small view (<600px page width) make the three touts full width per the comp
+- in small view (<600px page width) don't render the tagline
+- in small view you may want to take the vertical padding off of the individual '#page-header nav a' elements and put on their parent nav so if the nav wraps to next row the spacing looks ok.
+- BONUS: use flexbox (as covered in bonus material class) instead of floats and handle fluid layout with flexbox instead of (or in addition to) percentages
+- BONUS: have an alternative "hamburger" nav that replaces the header nav for small view (user clicks/taps a hamburger in the right of header to open/close the nav element)   
+*/
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	line-height: 1.5;
+	/*display: flex;*/
+}
+
+/* Text Styles */
+h1 {
+	font-size: 1.25em;
+	line-height: 1;
+}
+
+h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+h3 {
+	font-family: 'Merriweather', serif;
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+p {
+	margin: 0 0 30px 0;
+}
+
+/* Shared Styles */
+.button {
+	font-family: 'Oswald', sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	background: yellow;
+	color: black;
+	display: block;
+	text-align: center;
+	padding: 12px;
+	box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
+	border-radius: 5px;
+}
+
+.page-wrap {
+	width: 100%;
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+/* Header Styles */
+#page-header {
+	background: black;
+	color: white;
+	overflow: hidden;
+	border-bottom: 4px solid yellow;
+	padding: 0 28px;
+}
+
+#page-header a {
+	color: inherit;
+	text-decoration: none;
+}
+
+#page-header h1 {
+	float: left;
+	color: yellow;
+	font-family: 'Merriweather', serif;
+	font-size: 1.5em;
+	margin: 20px 0 0 0;
+}
+
+#page-header nav {
+	float: right;
+}
+
+#page-header nav li {
+	float: left;
+}
+
+#page-header nav a {
+	display: block;
+	padding: 20px 15px;
+}
+
+#page-header nav li a:hover {
+	color: yellow;
+}
+
+
+/* Tagline Styles */
+.tagline {
+	font-family: 'Merriweather', serif;
+	text-align: center;
+	margin: 0;
+	padding: 20px 28px;
+	font-size: 1.25em;
+	line-height: 20px;
+	font-style: italic;
+	background: #C6C6C6;
+	border-top: 1px solid #AAA;
+}
+
+.tagline del {
+	color: #999;
+}
+
+.tagline ins {
+	text-decoration: none;
+	border-bottom: 3px solid yellow;
+}
+
+/* Banner */
+.banner {
+	background: url(../images/coworking.jpg) center center no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	padding: 28px;
+	box-shadow: inset 0 0 5px rgba(0,0,0,.75);
+}
+
+.blurb {
+	background: rgba(255,255,255,.8);
+	width: 35%;
+	padding: 20px;
+	margin: 0 auto;
+	float: right;
+	box-shadow: 0 0 5px rgba(0,0,0,.75);
+	box-sizing: border-box;
+}
+
+/* Three columns */
+.touts {
+	background: #EEE;
+	background: white;
+	overflow: hidden;
+	padding: 20px;
+	box-sizing: border-box;
+	
+}
+
+.tout {
+	float: left;
+	width: 33%;
+	padding: 20px;
+	border-right: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.tout-3 {
+	border-right: 1px solid rgba(0,0,0,0);
+	box-sizing: border-box;
+
+}
+
+.tout .button {
+	background: #C6C6C6;
+}
+
+/* Footer */
+footer {
+	background: black;
+	color: white;
+	padding: 20px 30px;
+}
+
+/* media queries */
+
+@media (max-width: 600px) {
+
+	body {
+		font-size: 16px;
+	}
+
+	.tout {
+		float: none;
+		width: 100%;
+		text-align: center;
+		border-right: none;
+	}
+
+	.touts {
+		width: 100%;
+		text-align: center;
+	}
+
+	.tout-3 {
+		width: 100%;
+		text-align: center;
+		border-right: none;
+	}
+
+	#page-header h1 {
+		float: none;
+		text-align: center;
+	}
+
+	.blurb {
+		float: none;
+		text-align: center;
+		width: 80%;
+	}
+
+	nav a {
+		padding: 0px;
+		text-align: center;
+	}
+
+	#page-header {
+		padding: 20px 15px;
+	}
+
+	
+/* I MESSED UP FLEX BOX SO BADLY I HAD TO COPY THE OLD CODE BACK INTO THE APP. I PUT THE NAV IN A ROW AND IT WENT INTO A COLUMN??/*
+
+
+

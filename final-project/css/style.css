@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(245,245,245);
+}
+
+h1 {
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+  font-size: 75px;
+  color: turquoise;
+  border-bottom: 2px solid black;
+  margin: 0 0 50px 0;
+}
+
+.buttons {
+  text-align: center;
+  justify-content: space-between;
+  margin: 20px;
+  display: flex;
+  justify-content: center
+}
+
+.button {
+  font-family: 'Anton', sans-serif;
+  font-size: 40px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  margin: 0 5px;
+}
+
+.button {
+  transition: background-color 0.5s ease;
+}
+
+.button:focus{
+  border: none;
+}
+
+.button1:hover {
+  background-color: #4BFFA9;
+  color: darkgrey;
+}
+
+.button2:hover { 
+  background-color: #FFFC9F;
+  color: darkgrey;
+}
+
+.button3:hover { 
+  background-color: #9664E8;
+}
+
+.button4:hover {
+  background-color: #FF0770;
+}
+
+h3 {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  padding: 0 20px;
+  font-family: 'Lato', sans-serif;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.image {
+  border: 1px solid black;
+  width: 400px;
+  height: 400px;
+  justify-content: center;
+  align-self: center;
+  margin: 50px;
+  background-image: url(../images/maru-top.jpg);
+  background-size: cover;
+}
+
+footer {
+  font-family: 'Lato', sans-serif;
+
+}
