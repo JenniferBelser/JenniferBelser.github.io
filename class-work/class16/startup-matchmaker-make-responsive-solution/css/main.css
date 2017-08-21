@@ -1,0 +1,216 @@
+/*TIPS / GUIDELINES TO MAKE RESPONSIVE
+
+- reference the two included comps.  one shows how the page should resond in a fluid manner, the other shows a change in style when screen width is less than 600px
+- use percentage widths on the three tout columns on the bottom, and the .blurb element. Don't forget to use box-sizing: border-box to have padding and margin included in the elements' widths to make calculations easier
+- in small view (<600px page width) remove the floats and center elements per the comp
+- in small view (<600px page width) make the three touts full width per the comp
+- in small view (<600px page width) don't render the tagline
+- in small view you may want to take the vertical padding off of the individual '#page-header nav a' elements and put on their parent nav so if the nav wraps to next row the spacing looks ok.
+- BONUS: use flexbox (as covered in bonus material class) instead of floats and handle fluid layout with flexbox instead of (or in addition to) percentages
+- BONUS: have an alternative "hamburger" nav that replaces the header nav for small view (user clicks/taps a hamburger in the right of header to open/close the nav element)   
+*/
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+/* Text Styles */
+h1 {
+	font-size: 40px;
+	line-height: 1;
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+h3 {
+	font-family: 'Merriweather', serif;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+p {
+	margin: 0 0 30px 0;
+}
+
+/* Shared Styles */
+.button {
+	font-family: 'Oswald', sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	background: yellow;
+	color: black;
+	display: block;
+	text-align: center;
+	padding: 12px;
+	box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
+	border-radius: 5px;
+}
+
+.page-wrap {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/* Header Styles */
+#page-header {
+	background: black;
+	color: white;
+	overflow: hidden;
+	border-bottom: 4px solid yellow;
+	padding: 0 28px;
+}
+
+#page-header a {
+	color: inherit;
+	text-decoration: none;
+}
+
+#page-header h1 {
+	float: left;
+	color: yellow;
+	font-family: 'Merriweather', serif;
+	font-size: 30px;
+	margin: 20px 0 0 0;
+}
+
+#page-header nav {
+	float: right;
+}
+
+#page-header nav li {
+	float: left;
+}
+
+#page-header nav a {
+	display: block;
+	padding: 20px 15px;
+}
+
+#page-header nav li a:hover {
+	color: yellow;
+}
+
+/* Tagline Styles */
+.tagline {
+	font-family: 'Merriweather', serif;
+	text-align: center;
+	margin: 0;
+	padding: 20px 28px;
+	font-size: 25px;
+	line-height: 20px;
+	font-style: italic;
+	background: #C6C6C6;
+	border-top: 1px solid #AAA;
+}
+
+.tagline del {
+	color: #999;
+}
+
+.tagline ins {
+	text-decoration: none;
+	border-bottom: 3px solid yellow;
+}
+
+/* Banner */
+.banner {
+	background: url(../images/coworking.jpg) center center no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	padding: 28px;
+	box-shadow: inset 0 0 5px rgba(0,0,0,.75);
+}
+
+.blurb {
+	background: rgba(255,255,255,.8);
+	width: 350px;
+	margin: 0 auto;
+	padding: 36px;
+	float: right;
+	box-shadow: 0 0 5px rgba(0,0,0,.75);
+}
+
+/* Three columns */
+.touts {
+	background: #EEE;
+	background: white;
+	overflow: hidden;
+	padding: 20px 0;
+}
+
+.tout {
+	float: left;
+	width: 33.3333%;
+	padding: 2% 3%;
+	box-sizing: border-box;
+	border-right: 1px solid #ccc;
+}
+
+.tout-3 {
+	border-right: 1px solid rgba(0,0,0,0);
+}
+
+.tout .button {
+	background: #C6C6C6;
+}
+
+/* Footer */
+footer {
+	background: black;
+	color: white;
+	padding: 20px 30px;
+}
+
+
+@media only screen and (max-width: 600px) {
+	body {
+		font-size: 14px;
+	}
+
+  #page-header h1, #page-header nav {
+  	text-align: center;
+  	float: none;
+  }
+
+
+  #page-header nav {
+  	padding: 10px 0;
+  }
+
+  #page-header nav a {
+		padding: 5px 15px;
+	}
+
+  #page-header nav li {
+  	float: none;
+  	padding: 0;
+  	display: inline-block;
+  }
+
+	.tagline {
+		display: none;
+	}
+
+	.blurb {
+		float: none;
+		width: 80%;
+	}
+
+	.tout {
+		border-right: none;
+		float: none;
+		width: 100%;
+		margin-bottom: 30px; 
+	}
+
+	.tout h3 {
+		text-align: center;
+	}
+}

@@ -1,0 +1,39 @@
+.wrapper {
+	text-align: center;
+	padding-top: 75px;
+}
+
+header {
+	background: SeaGreen;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 75px;
+	color: white;
+	padding-left: 20px;
+	transition: all .2s ease-in;
+}
+
+header.small-header {
+	height: 25px;	
+	background: lightgreen;
+}
+
+header h1 {
+	font-size: 40px;
+	line-height: 75px;
+	transition: all .2s ease-in;
+}
+
+header.small-header h1 {
+	font-size: 15px;
+	line-height: 25px;
+
+}
+
+img {
+	width: 70%;
+	display: block;
+	margin: 30px auto 0;
+}
